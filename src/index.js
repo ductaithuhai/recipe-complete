@@ -1,6 +1,7 @@
+import './pages/header.js';
 import _ from 'lodash';
-import './style.css';
-import Icon from './pig.png';
+import './styles/style.css';
+import headerDiv from './pages/header.js';
 function component() {
   const element = document.createElement('div');
 
@@ -8,13 +9,9 @@ function component() {
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
   element.classList.add('hello');
 
-  const myIcon = new Image();
-  myIcon.src = Icon;
-
-  element.appendChild(myIcon);
-
-
   return element;
 }
-
-document.body.appendChild(component());
+const content = document.getElementById('content');
+const header = headerDiv();
+content.appendChild(component());
+content.appendChild(header);
