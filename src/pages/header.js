@@ -4,15 +4,21 @@ const headerDiv = function () {
   let nav = document.createElement('div');
   nav.id = 'nav';
   header.appendChild(nav);
-  let menu = document.createElement('tab');
-  menu.id = 'menu';
-  header.appendChild(menu);
-  let home = document.createElement('tab');
+
+  let home = document.createElement('button');
   home.id = 'home';
-  header.appendChild(home);
-  let about = document.createElement('tab');
+  home.innerHTML = "Home";
+  nav.appendChild(home);
+
+  let menu = document.createElement('button');
+  menu.id = 'menu';
+  menu.innerHTML = "Menu";
+  nav.appendChild(menu);
+
+  let about = document.createElement('button');
   about.id = 'about';
-  header.appendChild(about);
+  about.innerHTML = "About";
+  nav.appendChild(about);
   return header;
 }
 

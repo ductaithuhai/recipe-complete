@@ -2,16 +2,16 @@ import './pages/header.js';
 import _ from 'lodash';
 import './styles/style.css';
 import headerDiv from './pages/header.js';
-function component() {
-  const element = document.createElement('div');
+import homeContent from './pages/home.js';
+import menuContent from './pages/menu.js';
 
-  // Lodash, now import by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
 const content = document.getElementById('content');
+
 const header = headerDiv();
-content.appendChild(component());
 content.appendChild(header);
+
+//const homeCon = homeContent()
+//content.appendChild(homeCon);
+
+const menuCon = menuContent();
+content.appendChild(menuCon);

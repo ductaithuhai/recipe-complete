@@ -1,3 +1,102 @@
-.hello {
-  color: red;
+body {
+  background-color: darkred;
+  background-image: url(../assets/img/pngtree-red-chinese-style-pattern-background-image_512886.jpg);
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#menu,
+#home,
+#about {
+  width: auto;
+  height: auto;
+  font-size: 40px;
+  text-align: center;
+  background-color: darkgoldenrod;
+  border: none;
+  border-radius: 5px;
+}
+
+#menuContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  gap: 40px;
+  width: 800px;
+  height: 1000px;
+  background-color: darkgoldenrod;
+  margin: auto;
+}
+
+#title {
+  width: 700px;
+  height: 55px;
+  margin: 0px auto;
+  position: relative;
+  top: 20px;
+  font-size: 50px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 55px;
+  background-color: darkred;
+  color: white;
+}
+
+#infor {
+  width: 700px;
+  height: auto;
+  margin: 0px auto;
+  padding: 20px;
+  font-size: 25px;
+  text-align: left;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+}
+
+#time {
+  width: 400px;
+  height: auto;
+  margin: 0px auto;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+}
+
+#location {
+  width: auto;
+  height: auto;
+  margin: 0px auto;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: darkred;
+  color: white;
+}
+
+#phobo {
+  width: 750px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+
+}
+
+#gioithieu1 {
+  text-wrap: wrap;
 }
