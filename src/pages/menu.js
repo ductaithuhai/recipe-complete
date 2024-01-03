@@ -15,7 +15,7 @@ const menuContent = function () {
 
   let foodName1 = document.createElement('div');
   foodName1.id = "foodName1";
-  foodName1.innerHTML = "Phở";
+  foodName1.innerHTML = "Phở Hà Nội";
 
   let loiGioiThieu1 = document.createElement('div');
   loiGioiThieu1.id = "loigioithieu1";
@@ -46,11 +46,11 @@ const menuContent = function () {
 
   let foodName2 = document.createElement('div');
   foodName2.id = "foodName2";
-  foodName2.innerHTML = "Bánh Đa Cua";
+  foodName2.innerHTML = "Bánh Đa Cua Hải Phòng";
 
   let loiGioiThieu2 = document.createElement('div');
   loiGioiThieu2.id = "loigioithieu1";
-  loiGioiThieu2.innerHTML = "Phở, a Vietnamese treasure, is a bowl of pure comfort—rice noodles cradled in flavorful broth, adorned with succulent beef or chicken, fresh herbs, and crisp bean sprouts. This iconic dish captures Vietnam's culinary artistry, offering a harmonious blend of simplicity and rich taste that lingers in every savory spoonful.";
+  loiGioiThieu2.innerHTML = "Embark on a culinary adventure with Banh Da Cua, a Vietnamese delight. This crab noodle soup boasts chewy rice noodles, succulent crab meat, and a fragrant broth. Topped with fresh herbs and a hint of spice, Banh Da Cua is a symphony of flavors that transports your taste buds to the coastal wonders of Vietnam. Dive into a bowl and savor the essence of Vietnamese gastronomy.";
 
   let gia2 = document.createElement('div');
   gia2.id = "gia1";
@@ -64,13 +64,65 @@ const menuContent = function () {
   menuContent.appendChild(banhdacua);
 
   let comchay = document.createElement('div');
-  comchay.id = 'phobo';
-  comchay.innerHTML = "Best Traditional Food Ever!!!";
+  comchay.id = 'comchay';
+
+  let imageElement3 = document.createElement('img')
+  imageElement3.id = "comchay";
+  imageElement3.src = "../src/assets/img/hinh-3-com-chay-ninh-binh-an-kem-voi-cac-mon-man-vo-cung-hai-hoa.jpg";
+  imageElement3.alt = "Một dĩa cơm cháy chất lượng";
+  imageElement3.width = 300;
+
+  let gioiThieu3 = document.createElement('div');
+  gioiThieu3.id = "gioithieu3";
+
+  let foodName3 = document.createElement('div');
+  foodName3.id = "foodName3";
+  foodName3.innerHTML = "Cơm cháy Ninh Bình";
+
+  let loiGioiThieu3 = document.createElement('div');
+  loiGioiThieu3.id = "loigioithieu3";
+  loiGioiThieu3.innerHTML = "Embark on a culinary adventure with Banh Da Cua, a Vietnamese delight. This crab noodle soup boasts chewy rice noodles, succulent crab meat, and a fragrant broth. Topped with fresh herbs and a hint of spice, Banh Da Cua is a symphony of flavors that transports your taste buds to the coastal wonders of Vietnam. Dive into a bowl and savor the essence of Vietnamese gastronomy.";
+
+  let gia3 = document.createElement('div');
+  gia3.id = "gia3";
+  gia3.innerHTML = "Price: $50";
+
+  gioiThieu3.appendChild(foodName3);
+  gioiThieu3.appendChild(loiGioiThieu3);
+  gioiThieu3.appendChild(gia3);
+  comchay.appendChild(imageElement3);
+  comchay.appendChild(gioiThieu3);
   menuContent.appendChild(comchay);
 
   let mienluon = document.createElement('div');
-  mienluon.id = 'phobo';
-  mienluon.innerHTML = "Best Traditional Food Ever!!!";
+  mienluon.id = 'mienluon';
+
+  let imageElement4 = document.createElement('img')
+  imageElement4.id = "mienluon";
+  imageElement4.src = "../src/assets/img/hinh-4-mien-luon-nghe-an-kha-cau-ky-trong-cach-che-bien.jpg";
+  imageElement4.alt = "Một tô miến lươn ngon lành";
+  imageElement4.width = 300;
+
+  let gioiThieu4 = document.createElement('div');
+  gioiThieu4.id = "gioithieu4";
+
+  let foodName4 = document.createElement('div');
+  foodName4.id = "foodName4";
+  foodName4.innerHTML = "Miến lươn Nghệ An";
+
+  let loiGioiThieu4 = document.createElement('div');
+  loiGioiThieu4.id = "loigioithieu4";
+  loiGioiThieu4.innerHTML = "Embark on a culinary adventure with Banh Da Cua, a Vietnamese delight. This crab noodle soup boasts chewy rice noodles, succulent crab meat, and a fragrant broth. Topped with fresh herbs and a hint of spice, Banh Da Cua is a symphony of flavors that transports your taste buds to the coastal wonders of Vietnam. Dive into a bowl and savor the essence of Vietnamese gastronomy.";
+
+  let gia4 = document.createElement('div');
+  gia4.id = "gia4";
+  gia4.innerHTML = "Price: $50";
+
+  gioiThieu4.appendChild(foodName4);
+  gioiThieu4.appendChild(loiGioiThieu4);
+  gioiThieu4.appendChild(gia4);
+  mienluon.appendChild(imageElement4);
+  mienluon.appendChild(gioiThieu4);
   menuContent.appendChild(mienluon);
 
   let miquang = document.createElement('div');
