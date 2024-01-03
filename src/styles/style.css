@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'food1';
+  src: url('../assets/font/pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+
+html {
+  font-family: 'food1';
+}
+
 body {
   background-color: darkred;
   background-image: url(../assets/img/pngtree-red-chinese-style-pattern-background-image_512886.jpg);
@@ -27,9 +36,9 @@ body {
   justify-content: first baseline;
   gap: 40px;
   width: 800px;
-  height: 1000px;
+  height: 2050px;
   background-color: rgba(184, 134, 11);
-  margin: auto;
+  margin: 0px auto;
 }
 
 #title {
@@ -86,7 +95,13 @@ body {
 }
 
 #phobo,
-#banhdacua {
+#banhdacua,
+#comchay,
+#mienluon,
+#miquang,
+#banhkhot,
+#goicuon,
+#comtam {
   width: 750px;
   height: auto;
   display: flex;
@@ -95,10 +110,17 @@ body {
   position: relative;
   top: 20px;
   left: 20px;
+  color: whitesmoke;
 
 }
 
 #gioithieu1,
-#gioithieu2 {
+#gioithieu2,
+#gioithieu3,
+#gioithieu4,
+#gioithieu5,
+#gioithieu6,
+#gioithieu7,
+#gioithieu8 {
   text-wrap: wrap;
 }
